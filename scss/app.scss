@@ -1,0 +1,344 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+
+@include foundation-global-styles;
+@include foundation-grid;
+// @include foundation-flex-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+// @include foundation-range-input;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-card;
+@include foundation-close-button;
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-responsive-embed;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+// @include foundation-progress-element;
+// @include foundation-meter-element;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+// @include foundation-flex-classes;
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+#header {
+    background-color:#e6e6e6;
+    overflow: hidden;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.color div:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.top { margin-top:10px}
+
+.content::after {
+    content:" ";
+    display:table;
+    clear:both;
+}
+
+.color > div{
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+//Complimentary Styles
+
+//Neutral
+$light-gray:#AAA3A2;
+$dark-gray:#4E4C4C;
+
+// Reds
+$red:#C31330;
+
+// Blues
+$porcelain:#EDF1F2;
+$picton-blue:#3aa5e9;
+$calypso:#3a7092;
+$mirage:#141823;
+
+//Yellow
+$gold:#DCC67A;
+$cherokee:#fbdc9f;
+$westar:#dfd8d0;
+
+
+#quiet {
+    font-family: 'Muli', sans-serif;
+    border-left:20px solid $mirage;
+    border-right:20px solid $mirage;
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'GFS Didot', serif;
+    }
+    
+    h4, h5, h6
+    {
+        font-weight: 600;
+    }
+
+    h1 {
+        color:$red;
+        font-weight:normal;
+    }
+
+    #color-1 {
+        background-color:$light-gray;
+    }
+
+    #color-2 {
+        background-color:$dark-gray;
+    }
+
+    #color-3 {
+        background-color:$red;
+    }
+
+    // #color-4 {
+    //     background-color:$gold;
+    // }
+
+    // #color-5 {
+    //     background-color:$red;
+    // }
+
+    // #color-6 {
+    //     background-color:$gold;
+    // }
+
+    // #color-7 {
+    //     background-color:$westar;
+    // }
+
+    // #color-8 {
+    //     background-color:$light-gray;
+    // }
+
+    .pullquote {
+        margin-left:1rem;
+        border-left:20px solid $red;
+        background-color: lighten($light-gray, 27%);
+        font-size:2rem;
+        color:$dark-gray;
+        padding: 2rem;
+        float:right;
+        font-family: 'GFS Didot', serif;
+    }
+
+    .inspiration img {
+        padding:5%;
+        margin-bottom: 1rem;
+    }
+
+    .title {
+        border-bottom:.75rem solid $red;
+        margin-bottom: 1rem;
+    }
+
+    .colors {
+        border-bottom:.25rem solid $light-gray;
+        margin-bottom: 1rem;
+        padding-bottom:1rem;
+    }
+
+    .nav-link {
+        margin-right: 3rem;
+        font-size:1.33rem;
+        color:#fff;
+        background-color:$red;
+        padding:3px 5px;
+    }
+
+    .nav-link:hover {
+        background-color:$dark-gray;
+    }
+
+    p.links {
+        padding:.5rem 0;
+        border-top:.10rem solid $light-gray;
+        border-bottom:.10rem solid $light-gray;
+    }
+
+    .links button {
+        margin-left: 3rem;
+    }
+
+    .body-link {
+        color:$red;
+    }
+
+    .body-link:hover {
+        color:darken($red, 10%);
+        text-decoration: underline;
+    }
+
+    .button {
+        background-color:$picton-blue;
+        color:#fff;
+    }
+
+    .button:hover {
+        background-color:$calypso;
+    }
+
+        #circle {
+    width: 100px;
+    height: 100px;
+    background: red;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+}
+}
+
+#complimentary {
+
+    font-family: 'Muli', sans-serif;
+    border-left:20px solid $mirage;
+    border-right:20px solid $mirage;
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Muli', sans-serif;
+        font-weight: 600;
+    }
+
+    h1 {
+        color:$red;
+        font-weight:normal;
+    }
+
+    #color-1 {
+        background-color:$light-gray;
+    }
+
+    #color-2 {
+        background-color:$dark-gray;
+    }
+
+    #color-3 {
+        background-color:$red;
+    }
+
+    #color-4 {
+        background-color:$gold;
+    }
+
+    // #color-5 {
+    //     background-color:$red;
+    // }
+
+    // #color-6 {
+    //     background-color:$gold;
+    // }
+
+    // #color-7 {
+    //     background-color:$westar;
+    // }
+
+    // #color-8 {
+    //     background-color:$light-gray;
+    // }
+
+    .pullquote {
+        margin-left:1rem;
+        border-left:20px solid $gold;
+        background-color: lighten($gold, 27%);
+        font-size:2rem;
+        color:$red;
+        padding: 2rem;
+        float:right;
+    }
+
+    .inspiration img {
+        padding:5%;
+        margin-bottom: 1rem;
+    }
+
+    .title {
+        border-bottom:.75rem solid $red;
+        margin-bottom: 1rem;
+    }
+
+    .colors {
+        border-bottom:.25rem solid $gold;
+        margin-bottom: 1rem;
+        padding-bottom:1rem;
+    }
+
+    .nav-link {
+        margin-right: 3rem;
+        font-size:1.33rem;
+        color:#fff;
+        background-color:$red;
+        padding:3px 5px;
+    }
+
+    .nav-link:hover {
+        background-color:$gold;
+    }
+
+    p.links {
+        padding:.5rem 0;
+        border-top:.10rem solid $gold;
+        border-bottom:.10rem solid $gold;
+    }
+
+    .links button {
+        margin-left: 3rem;
+    }
+
+    .body-link {
+        color:$red;
+    }
+
+    .body-link:hover {
+        color:darken($red, 10%);
+        text-decoration: underline;
+    }
+
+    .button {
+        background-color:$picton-blue;
+        color:#fff;
+    }
+
+    .button:hover {
+        background-color:$calypso;
+    }
+}
